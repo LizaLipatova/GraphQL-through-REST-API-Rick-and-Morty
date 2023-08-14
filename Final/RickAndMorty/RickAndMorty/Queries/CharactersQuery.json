@@ -1,0 +1,9 @@
+query Character($filter: FilterCharacter, $page: Int) {
+  characters(filter: $filter, page: $page) {
+    results {
+      name
+      id
+      image
+    }
+  }
+}
