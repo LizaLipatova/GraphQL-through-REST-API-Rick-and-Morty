@@ -5,10 +5,6 @@
 //  Created by Yelyzaveta Lipatova on 08.08.2023.
 //
 
-public enum GraphQLResponseError: Error {
-    case error(errors: [GraphQLError])
-}
-
 public struct GraphQLResponse<Model: Decodable>: Decodable {
     
     public let data: Model?

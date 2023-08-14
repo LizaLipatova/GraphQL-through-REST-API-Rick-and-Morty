@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C9A05032A7BF5240060BB42 /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C9A05022A7BF5240060BB42 /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C9A05132A7BF5BC0060BB42 /* GraphQLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A05122A7BF5BC0060BB42 /* GraphQLRequest.swift */; };
-		0C9A051A2A7BF6710060BB42 /* URLSession+SessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A05192A7BF6710060BB42 /* URLSession+SessionProvider.swift */; };
 		0C9A051C2A8226990060BB42 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A051B2A8226990060BB42 /* NetworkService.swift */; };
 		0C9A051E2A82281F0060BB42 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A051D2A82281F0060BB42 /* GraphQLResponse.swift */; };
 		0C9A05362A83A8BB0060BB42 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A05352A83A8BB0060BB42 /* NetworkError.swift */; };
@@ -20,7 +19,6 @@
 		0C9A04FF2A7BF5240060BB42 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9A05022A7BF5240060BB42 /* Networking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
 		0C9A05122A7BF5BC0060BB42 /* GraphQLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLRequest.swift; sourceTree = "<group>"; };
-		0C9A05192A7BF6710060BB42 /* URLSession+SessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+SessionProvider.swift"; sourceTree = "<group>"; };
 		0C9A051B2A8226990060BB42 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0C9A051D2A82281F0060BB42 /* GraphQLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLResponse.swift; sourceTree = "<group>"; };
 		0C9A05352A83A8BB0060BB42 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -76,9 +74,8 @@
 			children = (
 				0C9A05142A7BF6330060BB42 /* Utilities */,
 				0C9A05122A7BF5BC0060BB42 /* GraphQLRequest.swift */,
-				0C9A051B2A8226990060BB42 /* NetworkService.swift */,
 				0C9A051D2A82281F0060BB42 /* GraphQLResponse.swift */,
-				0C9A05372A83AFA80060BB42 /* GraphQLError.swift */,
+				0C9A051B2A8226990060BB42 /* NetworkService.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -86,7 +83,7 @@
 		0C9A05142A7BF6330060BB42 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				0C9A05192A7BF6710060BB42 /* URLSession+SessionProvider.swift */,
+				0C9A05372A83AFA80060BB42 /* GraphQLError.swift */,
 				0C9A05352A83A8BB0060BB42 /* NetworkError.swift */,
 			);
 			path = Utilities;
@@ -175,7 +172,6 @@
 				0C9A051E2A82281F0060BB42 /* GraphQLResponse.swift in Sources */,
 				0C9A05362A83A8BB0060BB42 /* NetworkError.swift in Sources */,
 				0C9A051C2A8226990060BB42 /* NetworkService.swift in Sources */,
-				0C9A051A2A7BF6710060BB42 /* URLSession+SessionProvider.swift in Sources */,
 				0C9A05382A83AFA80060BB42 /* GraphQLError.swift in Sources */,
 				0C9A05132A7BF5BC0060BB42 /* GraphQLRequest.swift in Sources */,
 			);

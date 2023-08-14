@@ -8,17 +8,13 @@
 import Foundation
 
 public struct NetworkService {
-    
-    private let session: SessionProvider
-    
-    public init(session: SessionProvider) {
-        self.session = session
-    }
+        
+    public init() {}
     
     public func perform<Request: NetworkRequest>(request: Request) async throws -> Request.ResponseDataType {
         do {
             let urlRequest = request.create()
-            let (data, response) = try await session.fetch(request: urlRequest)
+            let (data, response) = try await URLSession.shared.data(for: urlRequest)
             
             guard let httpResponse = response as? HTTPURLResponse else {
                 throw NetworkError.message("InvalidResponse")

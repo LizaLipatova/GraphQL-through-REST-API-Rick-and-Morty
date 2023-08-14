@@ -13,7 +13,7 @@ class CharactersListViewModel {
     let charactersListLoadedSubject = PassthroughSubject<Void, Never>()
     
     private(set) var characters: [CharactersQueryResponse.Character] = []
-    private let api = APIService(session: URLSession.shared)
+    private let api = APIService()
     
     init() {
         Task { @MainActor in

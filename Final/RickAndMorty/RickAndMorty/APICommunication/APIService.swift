@@ -13,18 +13,11 @@ class APIService {
         let url: URL
         let charsQuery: String
     }
-    
-    let session: SessionProvider
-    
-    private let networkService: NetworkService
+        
+    private let networkService: NetworkService = .init()
     private let configuration: Configuration = .init(url: URL(string: "https://rickandmortyapi.com/graphql") ?? URL(filePath: ""),
                                                      charsQuery: (try? QueryFactory.getQuery(from: "CharactersQuery")) ?? "")
 
-    init(session: SessionProvider) {
-        self.session = session
-        networkService = .init(session: session)
-    }
-    
     func loadCharacters() async throws -> CharactersQueryResponse.QueryChars {
         typealias Request = GraphQLRequest<CharactersListVariables, GraphQLResponse<CharactersQueryResponse>>
         let variables: CharactersListVariables = .init(filter: .init(gender: nil, name: "Morty", species: nil, status: nil, type: nil), page: nil)
